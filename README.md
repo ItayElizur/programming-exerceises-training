@@ -6,3 +6,5 @@
 4. when you think the solution is ready, test it with CheckSolution file from the utils package.
 
 Good Luck!
+
+for reviewers - https://docs.google.com/document/d/1sQUedGklQFu3KtVnZtdu22bbQY45DrcogTgQbAq2apQ/edit?usp=sharing

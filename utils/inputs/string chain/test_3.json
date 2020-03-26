@@ -1,0 +1,8 @@
+{
+  "visible": 1,
+  "arguments": {
+    "lst": ["abc", "cba", "kmn", "nml"]
+  },
+  "time_limit": 1,
+  "desired_output": 0
+}

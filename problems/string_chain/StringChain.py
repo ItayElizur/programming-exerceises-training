@@ -1,29 +1,27 @@
 """
 problem formalization:
 
-You are given 2 arrays:
-1. A, N-sized integers array.
-2. B, N-sized binary array.
-The values of A are constant, but ou are allowed to change the values of B by performing a double bit switch (DBS):
-In a double bit switch, you choose two adjacent bit in B and perform NOT operation on both of them (reminder: NOT(0)
- = 1, NOT(1) = 0).
- You can use the the double bit switch operation as many times as you want.
+you are given a list of strings. we say that 2 strings can be chained if the last letter of one of them is the first
+letter of te next one ('hola', 'angle' -> 'holangle'). Check if the list of strings (in any order) can be chained in
+a circle (every string can be chained to the next one, and the last string can be chained to the first one).
 
-Create an EFFICIENT algorithm to find the maximum value of dot product that can be achieved by performing the DBS
-operation over B.
+Create an EFFICIENT algorithm to solve the task.
 
 -----------------------------------------------------------------------------------------------------------------------
 
 Example:
 
-input: A = [-8, 12, 27, 4, 13, -8, 6], B = [1, 0, 1, 1, 0, 0, 1]
-output: 58
+input: ['banana', 'apple', 'egb']
+output: True
+
+input: ['sharon', 'itay', 'ziv']
+output: False
 
 -----------------------------------------------------------------------------------------------------------------------
 
 Limitations:
 
-time - 0.5 seconds
+time - 1 seconds
 space - no limitation
 
 -----------------------------------------------------------------------------------------------------------------------
@@ -32,7 +30,7 @@ Testing:
 
 After implementing your solution, test it with out given input by 'CheckSolution' file.
 You have a total of 6 test:
-- tests 1-4 are visible to you, and you can access it's input using 'get_input' method from utils.Test.
+- tests 1-3 are visible to you, and you can access it's input using 'get_input' method from utils.Test.
 - test 4-6 is not visible to you, and need to pass it without knowing the input.
 It is assured to you that all input is legal and fits the solution signature.
 
@@ -48,11 +46,10 @@ In the doc, analyze the runtime of the algorithm you used.
 from typing import List
 
 
-def double_bit_switch_solution(a: List[int], b: List[bool]) -> int:
-    """ Decides which items to take, by maximizing the total value of them
+def string_chain_solution(lst: List[str]) -> bool:
+    """ Checks if the list of string can be chained
 
-    :param a: list of integers
-    :param b: list of booleans
-    :return: maximal possible dot-product value that can be obtained by performing DBSs.
+    :param lst: list of lowercase no-spaces strings
+    :return: True if chaining is possible else False
     """
     pass
