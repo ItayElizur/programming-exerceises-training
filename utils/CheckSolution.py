@@ -14,4 +14,4 @@ NAME = 'closest pairs'
 
 if __name__ == '__main__':
     # Fill relevant details
-    test(problem_name=NAME, idx=4)
+    test(problem_name=NAME, idx=5)
