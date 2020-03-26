@@ -32,13 +32,13 @@ def wrapper(func, desired_output, idx, *args, **kwargs):
 
 
 def get_official_and_user_solutions(problem_name: str) -> Tuple[Callable, Callable]:
-    path = f'problems.{problem_name.replace(" ", "_")}'
-    user_file = '.' + problem_name.title().replace(" ", "")
-    official_file = '.' + problem_name.title().replace(" ", "") + 'Solved'
+    path = f'problems.{problem_name}'
+    user_file = '.' + problem_name.title().replace("_", "")
+    official_file = '.' + problem_name.title().replace("_", "") + 'Solved'
     user_sol = importlib.import_module(user_file, path)
     official_sol = importlib.import_module(official_file, path)
 
-    module = problem_name.replace(" ", "_") + '_solution'
+    module = problem_name + '_solution'
     return getattr(official_sol, module), getattr(user_sol, module)
 
 

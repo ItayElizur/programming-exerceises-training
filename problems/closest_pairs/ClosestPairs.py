@@ -50,7 +50,7 @@ In the doc, analyze the runtime of the algorithm you used.
 from typing import List
 
 
-def closest_pair_solution(a: List[float]) -> int:
+def closest_pairs_solution(a: List[float]) -> int:
     """ Finds the smallest multiple of n, made only of given set of digits
 
     :param a: list of numbers

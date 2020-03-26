@@ -49,7 +49,7 @@ from typing import List
 import numpy as np
 
 
-def closest_pair_solution(a: List[float]) -> int:
+def closest_pairs_solution(a: List[float]) -> int:
     """ Finds the smallest multiple of n, made only of given set of digits
 
     :param a: list of numbers

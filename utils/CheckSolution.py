@@ -10,8 +10,8 @@ Good luck!
 from utils.Test import test
 
 # Set current problem name (lowercase with spaces)
-NAME = 'string chain'
+NAME = 'closest_pairs'
 
 if __name__ == '__main__':
     # Fill relevant details
-    test(problem_name=NAME, idx=6)
+    test(problem_name=NAME, idx=5)

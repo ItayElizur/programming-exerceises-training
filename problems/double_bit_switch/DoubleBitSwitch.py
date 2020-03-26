@@ -4,10 +4,10 @@ problem formalization:
 You are given 2 arrays:
 1. A, N-sized integers array.
 2. B, N-sized binary array.
-The values of A are constant, but ou are allowed to change the values of B by performing a double bit switch (DBS):
-In a double bit switch, you choose two adjacent bit in B and perform NOT operation on both of them (reminder: NOT(0)
+The values of A are constant, but ou are allowed to change the values of B by performing a double_bit_switch (DBS):
+In a double_bit_switch, you choose two adjacent bit in B and perform NOT operation on both of them (reminder: NOT(0)
  = 1, NOT(1) = 0).
- You can use the the double bit switch operation as many times as you want.
+ You can use the the double_bit_switch operation as many times as you want.
 
 Create an EFFICIENT algorithm to find the maximum value of dot product that can be achieved by performing the DBS
 operation over B.
