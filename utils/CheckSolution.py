@@ -9,12 +9,9 @@ Good luck!
 
 from utils.Test import test
 
-# Import your solution here
-from problems.shortest_path_amount.ShortestPathAmountSolved import shortest_path_amount_solution as solution
-
 # Set current problem name (lowercase with spaces)
-NAME = 'shortest path amount'
+NAME = 'closest pairs'
 
 if __name__ == '__main__':
     # Fill relevant details
-    test(problem_name=NAME, idx=10, solution=solution)
+    test(problem_name=NAME, idx=4)
